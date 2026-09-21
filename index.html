@@ -1,581 +1,628 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akram_Web | Discord Profile</title>
 
-    <title>Akram_Web | Discord Profile</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body{
+    min-height:100vh;
+    font-family:Arial,Helvetica,sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(120,70,255,.20),transparent 35%),
+        radial-gradient(circle at 80% 80%,rgba(0,200,255,.15),transparent 35%),
+        #070711;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 15px;
+    overflow-x:hidden;
+}
 
-        body {
-            min-height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background:
-                radial-gradient(circle at 20% 20%, rgba(120, 70, 255, 0.20), transparent 35%),
-                radial-gradient(circle at 80% 80%, rgba(0, 200, 255, 0.15), transparent 35%),
-                #070711;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px 15px;
-            overflow-x: hidden;
-        }
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#7c3cff;
+    filter:blur(180px);
+    opacity:.12;
+    top:-180px;
+    left:-180px;
+    animation:glowMove 8s infinite alternate ease-in-out;
+    pointer-events:none;
+}
 
-        body::before {
-            content: "";
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: #7c3cff;
-            filter: blur(180px);
-            opacity: 0.12;
-            top: -180px;
-            left: -180px;
-            animation: moveGlow 8s infinite alternate ease-in-out;
-            pointer-events: none;
-        }
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#00d9ff;
+    filter:blur(180px);
+    opacity:.10;
+    bottom:-180px;
+    right:-180px;
+    animation:glowMove 10s infinite alternate-reverse ease-in-out;
+    pointer-events:none;
+}
 
-        body::after {
-            content: "";
-            position: fixed;
-            width: 450px;
-            height: 450px;
-            background: #00d9ff;
-            filter: blur(180px);
-            opacity: 0.10;
-            bottom: -180px;
-            right: -180px;
-            animation: moveGlow 10s infinite alternate-reverse ease-in-out;
-            pointer-events: none;
-        }
+@keyframes glowMove{
+    from{transform:translate(0,0)}
+    to{transform:translate(80px,50px)}
+}
 
-        @keyframes moveGlow {
-            from {
-                transform: translate(0, 0);
-            }
+.container{
+    width:100%;
+    max-width:850px;
+    position:relative;
+    z-index:2;
+}
 
-            to {
-                transform: translate(80px, 50px);
-            }
-        }
+.profile-card{
+    overflow:hidden;
+    border-radius:28px;
+    background:rgba(13,13,25,.82);
+    border:1px solid rgba(255,255,255,.10);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.55),
+        0 0 60px rgba(124,60,255,.12);
+    backdrop-filter:blur(20px);
+}
 
-        .container {
-            width: 100%;
-            max-width: 850px;
-            position: relative;
-            z-index: 2;
-        }
+/* BANNER */
 
-        .profile-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 28px;
-            background: rgba(13, 13, 25, 0.82);
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            box-shadow:
-                0 30px 80px rgba(0, 0, 0, 0.55),
-                0 0 60px rgba(124, 60, 255, 0.12);
-            backdrop-filter: blur(20px);
-        }
+.banner{
+    height:220px;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 25% 30%,rgba(255,255,255,.25),transparent 8%),
+        radial-gradient(circle at 75% 20%,rgba(150,100,255,.30),transparent 20%),
+        linear-gradient(135deg,#17174a,#3c20a4,#0a6ca8);
+}
 
-        /* DISCORD STYLE BANNER */
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:-100px;
+    background:repeating-linear-gradient(
+        125deg,
+        transparent 0,
+        transparent 25px,
+        rgba(255,255,255,.04) 26px,
+        transparent 27px
+    );
+    animation:bannerMove 12s linear infinite;
+}
 
-        .banner {
-            height: 220px;
-            position: relative;
-            overflow: hidden;
-            background:
-                radial-gradient(circle at 25% 30%, rgba(255,255,255,0.25), transparent 8%),
-                radial-gradient(circle at 75% 20%, rgba(150,100,255,0.30), transparent 20%),
-                linear-gradient(135deg, #17174a, #3c20a4, #0a6ca8);
-        }
+@keyframes bannerMove{
+    from{transform:translateX(-50px)}
+    to{transform:translateX(50px)}
+}
 
-        .banner::before {
-            content: "";
-            position: absolute;
-            inset: -100px;
-            background:
-                repeating-linear-gradient(
-                    125deg,
-                    transparent 0px,
-                    transparent 25px,
-                    rgba(255,255,255,0.04) 26px,
-                    transparent 27px
-                );
-            animation: bannerMove 12s linear infinite;
-        }
+/* PROFILE */
 
-        @keyframes bannerMove {
-            from {
-                transform: translateX(-50px);
-            }
+.profile-content{
+    padding:0 35px 35px;
+}
 
-            to {
-                transform: translateX(50px);
-            }
-        }
+/* =========================
+   PROFILE EFFECT
+========================= */
 
-        .banner-glow {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: rgba(166, 87, 255, 0.25);
-            filter: blur(80px);
-            top: -150px;
-            right: 40px;
-        }
+.profile-picture-wrapper{
+    position:relative;
+    width:155px;
+    height:155px;
+    margin-top:-77px;
+    margin-bottom:18px;
+}
 
-        /* PROFILE */
+/* Outer rotating energy */
 
-        .profile-content {
-            padding: 0 35px 35px;
-        }
+.profile-picture-wrapper::before{
+    content:"";
+    position:absolute;
+    inset:-12px;
+    border-radius:50%;
+    background:conic-gradient(
+        from 0deg,
+        #7c3cff,
+        #00eaff,
+        #ffffff,
+        #7c3cff,
+        #ff35c8,
+        #00eaff,
+        #7c3cff
+    );
+    animation:profileRotate 4s linear infinite;
+    filter:blur(2px);
+    box-shadow:
+        0 0 18px #7c3cff,
+        0 0 35px rgba(0,234,255,.55),
+        0 0 60px rgba(124,60,255,.35);
+}
 
-        .profile-picture-wrapper {
-            position: relative;
-            width: 145px;
-            height: 145px;
-            margin-top: -72px;
-            margin-bottom: 18px;
-        }
+/* Dark gap between effect and picture */
 
-        .profile-ring {
-            width: 145px;
-            height: 145px;
-            padding: 5px;
-            border-radius: 50%;
-            background: linear-gradient(
-                135deg,
-                #ffffff,
-                #8d5cff,
-                #36d9ff,
-                #8d5cff,
-                #ffffff
-            );
-            background-size: 300% 300%;
-            animation: ringMove 5s ease infinite;
-            box-shadow:
-                0 0 25px rgba(139, 92, 246, 0.65),
-                0 0 55px rgba(0, 217, 255, 0.20);
-        }
+.profile-picture-wrapper::after{
+    content:"";
+    position:absolute;
+    inset:-4px;
+    border-radius:50%;
+    background:#0b0b16;
+    z-index:1;
+}
 
-        @keyframes ringMove {
-            0% {
-                background-position: 0% 50%;
-            }
+@keyframes profileRotate{
+    to{
+        transform:rotate(360deg);
+    }
+}
 
-            50% {
-                background-position: 100% 50%;
-            }
+/* Main PFP ring */
 
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+.profile-ring{
+    position:absolute;
+    inset:4px;
+    padding:5px;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #8d5cff,
+        #36d9ff,
+        #ff38c8,
+        #8d5cff,
+        #ffffff
+    );
+    background-size:300% 300%;
+    animation:ringMove 5s ease infinite;
+    box-shadow:
+        0 0 20px rgba(139,92,246,.8),
+        0 0 40px rgba(0,217,255,.25);
+    z-index:2;
+}
 
-        .profile-picture {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            border: 5px solid #10101b;
-        }
+@keyframes ringMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
-        .online-dot {
-            position: absolute;
-            right: 8px;
-            bottom: 8px;
-            width: 27px;
-            height: 27px;
-            border-radius: 50%;
-            background: #23d66b;
-            border: 5px solid #10101b;
-            box-shadow: 0 0 18px rgba(35, 214, 107, 0.8);
-        }
+.profile-picture{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    border:5px solid #10101b;
+}
 
-        .name {
-            font-size: 42px;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
+/* Floating particles */
 
-        .username {
-            margin-top: 5px;
-            color: #9999b0;
-            font-size: 16px;
-        }
+.profile-picture-wrapper .particle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 0 10px #00eaff;
+    z-index:4;
+    animation:particleFloat 2.5s infinite ease-in-out;
+}
 
-        .username span {
-            color: #7e7eff;
-        }
+.particle.p1{
+    top:5px;
+    left:25px;
+}
 
-        .tagline {
-            margin-top: 20px;
-            color: #d9d9e7;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+.particle.p2{
+    top:35px;
+    right:-2px;
+    animation-delay:.5s;
+}
 
-        .tagline strong {
-            color: #a987ff;
-        }
+.particle.p3{
+    bottom:18px;
+    left:-2px;
+    animation-delay:1s;
+}
 
-        /* BADGES */
+.particle.p4{
+    bottom:0;
+    right:28px;
+    animation-delay:1.5s;
+}
 
-        .section {
-            margin-top: 32px;
-        }
+@keyframes particleFloat{
+    0%,100%{
+        transform:translateY(0) scale(1);
+        opacity:.4;
+    }
+    50%{
+        transform:translateY(-8px) scale(1.4);
+        opacity:1;
+    }
+}
 
-        .section-title {
-            color: #8f8fa8;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 13px;
-        }
+/* Online */
 
-        .badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.online-dot{
+    position:absolute;
+    right:7px;
+    bottom:7px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#23d66b;
+    border:5px solid #10101b;
+    box-shadow:
+        0 0 12px #23d66b,
+        0 0 25px rgba(35,214,107,.7);
+    z-index:5;
+}
 
-        .badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 9px 13px;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.055);
-            border: 1px solid rgba(255,255,255,0.08);
-            color: #e7e7f2;
-            font-size: 13px;
-            transition: 0.25s;
-        }
+/* NAME */
 
-        .badge:hover {
-            transform: translateY(-3px);
-            background: rgba(139, 92, 246, 0.13);
-            border-color: rgba(139, 92, 246, 0.35);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
+.name{
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
 
-        .badge-icon {
-            font-size: 18px;
-        }
+.username{
+    margin-top:5px;
+    color:#9999b0;
+    font-size:16px;
+}
 
-        /* INTERESTS */
+.username span{
+    color:#7e7eff;
+}
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.tagline{
+    margin-top:20px;
+    color:#d9d9e7;
+    font-size:18px;
+    line-height:1.6;
+}
 
-        .tag {
-            padding: 8px 14px;
-            border-radius: 999px;
-            color: #cfcfff;
-            background: rgba(105, 76, 255, 0.12);
-            border: 1px solid rgba(120, 95, 255, 0.25);
-            font-size: 13px;
-        }
+.tagline strong{
+    color:#a987ff;
+}
 
-        /* SOCIALS */
+/* BADGES */
 
-        .socials {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
+.section{
+    margin-top:32px;
+}
 
-        .social {
-            text-decoration: none;
-            color: white;
-            padding: 16px;
-            border-radius: 16px;
-            background: rgba(255,255,255,0.045);
-            border: 1px solid rgba(255,255,255,0.08);
-            transition: 0.25s;
-            text-align: center;
-            font-weight: 700;
-        }
+.section-title{
+    color:#8f8fa8;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:13px;
+}
 
-        .social:hover {
-            transform: translateY(-4px);
-            border-color: rgba(139,92,246,0.45);
-            background: rgba(139,92,246,0.12);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-        }
+.badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
 
-        .social-icon {
-            font-size: 25px;
-            display: block;
-            margin-bottom: 7px;
-        }
+.badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 13px;
+    border-radius:12px;
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.08);
+    color:#e7e7f2;
+    font-size:13px;
+    transition:.25s;
+}
 
-        /* CONTACT */
+.badge:hover{
+    transform:translateY(-3px);
+    background:rgba(139,92,246,.13);
+    border-color:rgba(139,92,246,.35);
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
 
-        .discord-contact {
-            margin-top: 30px;
-            padding: 22px;
-            border-radius: 18px;
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(88, 101, 242, 0.16),
-                    rgba(139, 92, 246, 0.08)
-                );
-            border: 1px solid rgba(88,101,242,0.25);
-        }
+.badge-icon{
+    font-size:18px;
+}
 
-        .discord-contact h2 {
-            font-size: 20px;
-            margin-bottom: 7px;
-        }
+/* TAGS */
 
-        .discord-contact p {
-            color: #aaaabd;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
 
-        .discord-button {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background: #5865f2;
-            padding: 12px 20px;
-            border-radius: 12px;
-            font-weight: 700;
-            transition: 0.25s;
-            box-shadow: 0 8px 25px rgba(88,101,242,0.25);
-        }
+.tag{
+    padding:8px 14px;
+    border-radius:999px;
+    color:#cfcfff;
+    background:rgba(105,76,255,.12);
+    border:1px solid rgba(120,95,255,.25);
+    font-size:13px;
+}
 
-        .discord-button:hover {
-            transform: translateY(-3px);
-            background: #6875ff;
-            box-shadow: 0 12px 30px rgba(88,101,242,0.40);
-        }
+/* SOCIALS */
 
-        footer {
-            text-align: center;
-            margin-top: 28px;
-            color: #65657b;
-            font-size: 12px;
-        }
+.socials{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
 
-        /* MOBILE */
+.social{
+    text-decoration:none;
+    color:white;
+    padding:16px;
+    border-radius:16px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.25s;
+    text-align:center;
+    font-weight:700;
+}
 
-        @media (max-width: 650px) {
+.social:hover{
+    transform:translateY(-4px);
+    border-color:rgba(139,92,246,.45);
+    background:rgba(139,92,246,.12);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
 
-            body {
-                padding: 15px 10px;
-            }
+.social-icon{
+    font-size:25px;
+    display:block;
+    margin-bottom:7px;
+}
 
-            .banner {
-                height: 175px;
-            }
+/* DISCORD */
 
-            .profile-content {
-                padding: 0 20px 25px;
-            }
+.discord-contact{
+    margin-top:30px;
+    padding:22px;
+    border-radius:18px;
+    background:linear-gradient(
+        135deg,
+        rgba(88,101,242,.16),
+        rgba(139,92,246,.08)
+    );
+    border:1px solid rgba(88,101,242,.25);
+}
 
-            .profile-picture-wrapper,
-            .profile-ring {
-                width: 115px;
-                height: 115px;
-            }
+.discord-contact h2{
+    font-size:20px;
+    margin-bottom:7px;
+}
 
-            .profile-picture-wrapper {
-                margin-top: -57px;
-            }
+.discord-contact p{
+    color:#aaaabd;
+    font-size:14px;
+    margin-bottom:15px;
+}
 
-            .online-dot {
-                width: 23px;
-                height: 23px;
-                right: 5px;
-                bottom: 5px;
-            }
+.discord-button{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#5865f2;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:700;
+    transition:.25s;
+    box-shadow:0 8px 25px rgba(88,101,242,.25);
+}
 
-            .name {
-                font-size: 32px;
-            }
+.discord-button:hover{
+    transform:translateY(-3px);
+    background:#6875ff;
+    box-shadow:0 12px 30px rgba(88,101,242,.40);
+}
 
-            .tagline {
-                font-size: 16px;
-            }
+footer{
+    text-align:center;
+    margin-top:28px;
+    color:#65657b;
+    font-size:12px;
+}
 
-            .socials {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+/* MOBILE */
+
+@media(max-width:650px){
+
+    body{
+        padding:15px 10px;
+    }
+
+    .banner{
+        height:175px;
+    }
+
+    .profile-content{
+        padding:0 20px 25px;
+    }
+
+    .profile-picture-wrapper{
+        width:125px;
+        height:125px;
+        margin-top:-62px;
+    }
+
+    .name{
+        font-size:32px;
+    }
+
+    .tagline{
+        font-size:16px;
+    }
+
+    .socials{
+        grid-template-columns:1fr;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <main class="container">
+<main class="container">
 
-        <div class="profile-card">
+<div class="profile-card">
 
-            <!-- DISCORD STYLE BANNER -->
-            <div class="banner">
-                <div class="banner-glow"></div>
+    <div class="banner"></div>
+
+    <div class="profile-content">
+
+        <!-- PROFILE EFFECT + PFP -->
+
+        <div class="profile-picture-wrapper">
+
+            <div class="profile-ring">
+                <img
+                    src="./profile.png"
+                    alt="Akram Profile Picture"
+                    class="profile-picture"
+                >
             </div>
 
-            <div class="profile-content">
+            <span class="particle p1"></span>
+            <span class="particle p2"></span>
+            <span class="particle p3"></span>
+            <span class="particle p4"></span>
 
-                <!-- PROFILE PICTURE -->
-                <div class="profile-picture-wrapper">
+            <div class="online-dot"></div>
 
-                    <div class="profile-ring">
-                        <img
-                            src="./profile.png"
-                            alt="Akram Profile Picture"
-                            class="profile-picture"
-                        >
-                    </div>
-
-                    <div class="online-dot"></div>
-
-                </div>
-
-                <!-- NAME -->
-                <h1 class="name">—✮ AKRAM</h1>
-
-                <p class="username">
-                    <span>@</span>akramkhan1327
-                </p>
-
-                <p class="tagline">
-                    <strong>Gamer</strong> • <strong>Developer</strong> • <strong>Creator</strong><br>
-                    Building. Gaming. Creating.
-                </p>
-
-                <!-- BADGES -->
-                <section class="section">
-
-                    <div class="section-title">
-                        Discord Badges
-                    </div>
-
-                    <div class="badges">
-
-                        <div class="badge">
-                            <span class="badge-icon">👑</span>
-                            Active Developer
-                        </div>
-
-                        <div class="badge">
-                            <span class="badge-icon">⚡</span>
-                            Nitro
-                        </div>
-
-                        <div class="badge">
-                            <span class="badge-icon">🚀</span>
-                            Server Booster
-                        </div>
-
-                    </div>
-
-                </section>
-
-                <!-- INTERESTS -->
-                <section class="section">
-
-                    <div class="section-title">
-                        Interests
-                    </div>
-
-                    <div class="tags">
-
-                        <div class="tag">Web Development</div>
-                        <div class="tag">PvP</div>
-                        <div class="tag">Gaming</div>
-                        <div class="tag">Discord</div>
-
-                    </div>
-
-                </section>
-
-                <!-- SOCIALS -->
-                <section class="section">
-
-                    <div class="section-title">
-                        Find Me
-                    </div>
-
-                    <div class="socials">
-
-                        <a
-                            class="social"
-                            href="#"
-                            target="_blank"
-                        >
-                            <span class="social-icon">📸</span>
-                            Instagram
-                        </a>
-
-                        <a
-                            class="social"
-                            href="#"
-                            target="_blank"
-                        >
-                            <span class="social-icon">💬</span>
-                            Discord
-                        </a>
-
-                        <a
-                            class="social"
-                            href="#"
-                            target="_blank"
-                        >
-                            <span class="social-icon">▶️</span>
-                            YouTube
-                        </a>
-
-                    </div>
-
-                </section>
-
-                <!-- DISCORD CONTACT -->
-                <div class="discord-contact">
-
-                    <h2>Want to talk?</h2>
-
-                    <p>
-                        Discord par message karo. Mobile number ki zarurat nahi.
-                    </p>
-
-                    <a
-                        class="discord-button"
-                        href="#"
-                        target="_blank"
-                    >
-                        💬 Contact me on Discord
-                    </a>
-
-                </div>
-
-                <footer>
-                    © 2026 Akram_Web • Built with ❤️ & Code
-                </footer>
-
-            </div>
         </div>
 
-    </main>
+        <h1 class="name">—✮ AKRAM</h1>
+
+        <p class="username">
+            <span>@</span>akramkhan1327
+        </p>
+
+        <p class="tagline">
+            <strong>Gamer</strong> •
+            <strong>Developer</strong> •
+            <strong>Creator</strong><br>
+            Building. Gaming. Creating.
+        </p>
+
+        <section class="section">
+
+            <div class="section-title">
+                Discord Badges
+            </div>
+
+            <div class="badges">
+
+                <div class="badge">
+                    <span class="badge-icon">👑</span>
+                    Active Developer
+                </div>
+
+                <div class="badge">
+                    <span class="badge-icon">⚡</span>
+                    Nitro
+                </div>
+
+                <div class="badge">
+                    <span class="badge-icon">🚀</span>
+                    Server Booster
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-title">
+                Interests
+            </div>
+
+            <div class="tags">
+
+                <div class="tag">Web Development</div>
+                <div class="tag">PvP</div>
+                <div class="tag">Gaming</div>
+                <div class="tag">Discord</div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-title">
+                Find Me
+            </div>
+
+            <div class="socials">
+
+                <a class="social" href="#" target="_blank">
+                    <span class="social-icon">📸</span>
+                    Instagram
+                </a>
+
+                <a class="social" href="#" target="_blank">
+                    <span class="social-icon">💬</span>
+                    Discord
+                </a>
+
+                <a class="social" href="#" target="_blank">
+                    <span class="social-icon">▶️</span>
+                    YouTube
+                </a>
+
+            </div>
+
+        </section>
+
+        <div class="discord-contact">
+
+            <h2>Want to talk?</h2>
+
+            <p>
+                Discord par message karo. Mobile number ki zarurat nahi.
+            </p>
+
+            <a class="discord-button" href="#" target="_blank">
+                💬 Contact me on Discord
+            </a>
+
+        </div>
+
+        <footer>
+            © 2026 Akram_Web • Built with ❤️ & Code
+        </footer>
+
+    </div>
+
+</div>
+
+</main>
 
 </body>
 </html>
+```

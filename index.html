@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07080d">
+  <meta name="description" content="AKRAM — Developer, Creator & Gamer.">
+  <title>AKRAM — Developer & Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="sky"></div>
+    <div class="mountain mountain-left"></div>
+    <div class="mountain mountain-right"></div>
+    <div class="ground"></div>
+    <div id="particles" aria-hidden="true"></div>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="AKRAM home">
+      <span class="brand-photo"><img src="profile.png" alt=""></span>
+      <span>AKRAM</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="nav-link active" href="#about">ABOUT</a>
+      <a class="nav-link" href="#skills">SKILLS</a>
+      <a class="nav-link" href="#projects">PROJECTS</a>
+      <a class="nav-link" href="#toolkit">TOOLKIT</a>
+      <a class="nav-link" href="#contact">CONTACT</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="sound-btn" id="soundBtn" type="button" aria-label="Toggle sound">
+        <span>⌁</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#toolkit">TOOLKIT</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
+  <main id="home">
+    <section class="hero page-section">
+      <div class="hero-inner">
+        <p class="kicker">DEVELOPER • CREATOR • GAMER</p>
+        <h1>BUILDING <span>DIGITAL</span><br>EXPERIENCES.</h1>
+        <p class="hero-description">
+          I create modern web experiences, Discord projects and gaming-focused systems
+          with a clean interface and a strong technical feel.
+        </p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#projects">EXPLORE WORK <b>↗</b></a>
+          <a class="outline-btn" href="#contact">CONTACT ME <b>↗</b></a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">⌘</a>
+          <a href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener" aria-label="Discord">▢</a>
+          <a href="#contact" aria-label="Contact">@</a>
+        </div>
+      </div>
+
+      <div class="hero-divider"></div>
+
+      <div class="quick-stats">
+        <div><strong>WEB</strong><span>DEVELOPMENT</span></div>
+        <div><strong>BOT</strong><span>DISCORD SYSTEMS</span></div>
+        <div><strong>PVP</strong><span>GAMING</span></div>
+        <div><strong>LIVE</strong><span>DISCORD PRESENCE</span></div>
+      </div>
+    </section>
+
+    <section class="page-section about" id="about">
+      <div class="section-intro">
+        <p class="kicker">ABOUT ME</p>
+        <h2>DEVELOPER &<br><em>COMMUNITY BUILDER</em></h2>
+        <p class="section-copy">
+          A personal portfolio built around coding, gaming and digital communities.
+          The layout is inspired by the dark, cinematic portfolio style you showed,
+          while keeping your own AKRAM identity.
+        </p>
+        <p class="section-copy">
+          I enjoy turning ideas into interfaces, bots and interactive projects —
+          from the first concept to something people can actually use.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="card-icon">↗</span>
+          <strong>WEB</strong>
+          <h3>Modern Interfaces</h3>
+          <p>Clean layouts, responsive pages and polished interactions.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-icon">&lt;/&gt;</span>
+          <strong>BOT</strong>
+          <h3>Discord Projects</h3>
+          <p>Interactive Discord experiences with useful automation.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-icon">✦</span>
+          <strong>CREATE</strong>
+          <h3>Digital Ideas</h3>
+          <p>Experimenting with new concepts, designs and systems.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-icon">◇</span>
+          <strong>GAMING</strong>
+          <h3>Gaming Focus</h3>
+          <p>Gaming communities, Minecraft projects and PvP culture.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section skills" id="skills">
+      <div class="center-heading">
+        <p class="kicker">WHAT I DO</p>
+        <h2>TECHNICAL <em>SKILLS</em></h2>
+      </div>
+
+      <div class="skill-list">
+        <div class="skill">
+          <div class="skill-top"><span>JavaScript / TypeScript</span><b>88%</b></div>
+          <div class="bar"><i style="width:88%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Python</span><b>92%</b></div>
+          <div class="bar"><i style="width:92%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>HTML & CSS</span><b>95%</b></div>
+          <div class="bar"><i style="width:95%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Discord Development</span><b>90%</b></div>
+          <div class="bar"><i style="width:90%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Minecraft / Server Systems</span><b>86%</b></div>
+          <div class="bar"><i style="width:86%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section projects" id="projects">
+      <div class="center-heading">
+        <p class="kicker">SELECTED WORK</p>
+        <h2>MY <em>PROJECTS</em></h2>
+        <p>Some of the project categories represented by the AKRAM profile.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top"><span>01</span><b>DISCORD</b></div>
+          <div class="project-icon">▢</div>
+          <h3>Discord Bot Systems</h3>
+          <p>Multipurpose bots, music features, moderation and interactive server tools.</p>
+          <div class="tags"><span>PYTHON</span><span>DISCORD</span><span>BOT</span></div>
+          <div class="project-links"><a href="#contact">DISCUSS ↗</a><a href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener">DISCORD ↗</a></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span>02</span><b>WEB</b></div>
+          <div class="project-icon">&lt;/&gt;</div>
+          <h3>Modern Web Projects</h3>
+          <p>Dark, responsive websites with strong visual hierarchy and interactive UI.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="project-links"><a href="#contact">DISCUSS ↗</a><a href="#toolkit">STACK ↗</a></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span>03</span><b>MINECRAFT</b></div>
+          <div class="project-icon">◇</div>
+          <h3>Gaming & Server Projects</h3>
+          <p>Minecraft server experiences, communities, interfaces and supporting tools.</p>
+          <div class="tags"><span>MINECRAFT</span><span>SERVER</span><span>PVP</span></div>
+          <div class="project-links"><a href="#contact">DISCUSS ↗</a><a href="#about">ABOUT ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section toolkit" id="toolkit">
+      <div class="center-heading">
+        <p class="kicker">TOOLS I USE</p>
+        <h2>MY <em>TOOLKIT</em></h2>
+        <p>The technologies and tools used across different kinds of projects.</p>
+      </div>
+
+      <div class="tool-grid">
+        <div class="tool-card"><span>&lt;/&gt;</span><b>VS CODE</b><small>CODE EDITOR</small></div>
+        <div class="tool-card"><span>⌘</span><b>GITHUB</b><small>VERSION CONTROL</small></div>
+        <div class="tool-card"><span>ϟ</span><b>JAVASCRIPT</b><small>WEB</small></div>
+        <div class="tool-card"><span>✦</span><b>PYTHON</b><small>BACKEND / BOTS</small></div>
+        <div class="tool-card"><span>◇</span><b>NODE.JS</b><small>RUNTIME</small></div>
+        <div class="tool-card"><span>◈</span><b>MINECRAFT</b><small>SERVER ECOSYSTEM</small></div>
+      </div>
+    </section>
+
+    <section class="page-section presence" id="presence">
+      <div class="center-heading">
+        <p class="kicker">LIVE STATUS</p>
+        <h2>DISCORD <em>PRESENCE</em></h2>
+        <p>Live presence is loaded through Lanyard.</p>
+      </div>
+
+      <div class="presence-card">
+        <div class="presence-profile">
+          <div class="presence-avatar-wrap">
+            <img src="profile.png" id="discordPfp" alt="Discord profile">
+            <span id="profileStatus"></span>
+          </div>
+          <div>
+            <h3 id="discordName">AKRAM</h3>
+            <p id="presenceState">Connecting to Discord...</p>
+          </div>
+          <div class="live-status"><span id="statusMini"></span><b id="statusText">Connecting...</b></div>
+        </div>
+
+        <div class="activity" id="activityCard">
+          <img id="activityImg" alt="" style="display:none">
+          <div>
+            <small id="activityType">CURRENTLY</small>
+            <h4 id="activityName">Loading...</h4>
+            <p id="activityDetail"></p>
+          </div>
+        </div>
+        <p class="no-activity" id="noActivity">Waiting for Discord activity...</p>
+      </div>
+    </section>
+
+    <section class="page-section contact" id="contact">
+      <div class="contact-inner">
+        <p class="kicker">LET'S CONNECT</p>
+        <h2>HAVE AN IDEA?<br><em>LET'S BUILD IT.</em></h2>
+        <p>For projects, collaborations or just a chat, Discord is the easiest way to reach me.</p>
+        <a class="primary-btn" href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener">OPEN DISCORD <b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 AKRAM_WEB</span>
+    <span>BUILT WITH CODE & CREATIVITY</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

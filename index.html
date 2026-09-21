@@ -1,6 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AKRAM TEST</title>
-  ...
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="AKRAM — Gamer, Developer & Creator.">
+  <title>AKRAM — Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+  <div class="noise"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grid-bg"></div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#home" aria-label="AKRAM home">
+      <span class="logo-mark"><span></span></span>
+      <span>AKRAM<span class="logo-accent">.</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#presence">Presence</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">☼</button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#presence">Presence</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Digital Profile • Discord Live</div>
+        <h1>—✮ <span>AKRAM</span></h1>
+        <p class="hero-sub">@akramkhan1327</p>
+        <p class="hero-text">
+          <strong>Gamer</strong> • <strong>Developer</strong> • <strong>Creator</strong><br>
+          Building. Gaming. Creating.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener">
+            <span>Discord</span><span class="btn-arrow">↗</span>
+          </a>
+          <a class="btn btn-ghost" href="#presence">Live Activity <span>↓</span></a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener" aria-label="Discord">DC</a>
+          <a href="#contact" aria-label="Contact">✦</a>
+          <a href="#skills" aria-label="Skills">⌘</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <div class="profile-ring">
+            <img src="profile.png" alt="AKRAM profile picture" class="profile-image">
+          </div>
+          <span class="online-badge" id="profileStatus" title="Discord status"></span>
+          <div class="profile-caption">
+            <span>AKRAM</span>
+            <small>Digital Creator</small>
+          </div>
+        </div>
+        <div class="floating-chip chip-one">WEB</div>
+        <div class="floating-chip chip-two">PVP</div>
+        <div class="floating-chip chip-three">DISCORD</div>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div><strong>03</strong><span>Core Roles</span></div>
+        <div><strong>06</strong><span>Focus Areas</span></div>
+        <div><strong>LIVE</strong><span>Discord Presence</span></div>
+        <div><strong>24/7</strong><span>Creative Energy</span></div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-tag">01 / ABOUT</span>
+        <h2>Built around<br><em>creativity.</em></h2>
+      </div>
+      <div class="about-copy reveal">
+        <p class="lead">A digital profile for someone who enjoys <b>gaming, development and creating.</b></p>
+        <p>This portfolio keeps the original AKRAM identity and Discord presence, but presents it with a cleaner glassmorphism, indigo-accented interface inspired by the reference portfolio.</p>
+        <div class="mini-pills">
+          <span>Web Development</span>
+          <span>Gaming</span>
+          <span>Discord</span>
+          <span>Coding</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading center reveal">
+        <span class="section-tag">02 / SKILLS</span>
+        <h2>Things I <em>do.</em></h2>
+        <p>Core areas already represented in the current AKRAM profile.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon">⌘</div>
+          <span class="card-number">01</span>
+          <h3>Web Development</h3>
+          <p>Building and shaping modern web experiences with a focus on clean interfaces.</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <span class="card-number">02</span>
+          <h3>Gaming & PvP</h3>
+          <p>Gaming is a core part of the profile, with PvP and competitive play in the mix.</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">◈</div>
+          <span class="card-number">03</span>
+          <h3>Discord</h3>
+          <p>Connected to Discord with live presence and activity information on this page.</p>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon">✦</div>
+          <span class="card-number">04</span>
+          <h3>Creator</h3>
+          <p>Creating, experimenting and turning ideas into digital projects and experiences.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section presence-section" id="presence">
+      <div class="section-heading reveal">
+        <span class="section-tag">03 / LIVE</span>
+        <h2>Discord<br><em>presence.</em></h2>
+      </div>
+
+      <div class="presence-layout reveal">
+        <div class="presence-main-card">
+          <div class="presence-head">
+            <div class="presence-user">
+              <img src="profile.png" id="discordPfp" alt="Discord profile">
+              <div>
+                <h3 id="discordName">AKRAM</h3>
+                <p id="presenceState">Checking Discord...</p>
+              </div>
+            </div>
+            <div class="status-label"><span id="statusMini"></span><span id="statusText">Connecting...</span></div>
+          </div>
+
+          <div class="activity-card" id="activityCard">
+            <img id="activityImg" src="" alt="Activity artwork">
+            <div>
+              <small id="activityType">Currently</small>
+              <h4 id="activityName">Loading...</h4>
+              <p id="activityDetail"></p>
+            </div>
+          </div>
+          <p class="no-activity" id="noActivity">Discord activity will appear here when you are sharing one.</p>
+        </div>
+
+        <div class="badge-panel">
+          <div class="panel-label">DISCORD BADGES</div>
+          <div class="badge-grid">
+            <div class="badge"><b>♛</b><span>Active Developer</span><small>Discord</small></div>
+            <div class="badge"><b>ϟ</b><span>Nitro</span><small>Discord</small></div>
+            <div class="badge"><b>↗</b><span>Server Booster</span><small>Discord</small></div>
+            <div class="badge"><b>◉</b><span>Gamer</span><small>Always online somewhere</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-tag">04 / CONTACT</span>
+          <h2>Let's connect<br><em>somewhere.</em></h2>
+          <p>Discord is the active contact point for this profile.</p>
+        </div>
+        <a class="btn btn-primary large" href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener">
+          Open Discord <span>↗</span>
+        </a>
+      </div>
+
+      <div class="footer-socials reveal">
+        <a href="https://discord.com/users/1504461725888675970" target="_blank" rel="noopener">Discord <span>↗</span></a>
+        <a href="#skills">Skills <span>↗</span></a>
+        <a href="#presence">Live Presence <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 AKRAM_WEB</span>
+    <span>Built with <b>♥</b> & Code</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
